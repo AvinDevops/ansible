@@ -10,3 +10,4 @@
     ansible.builtin.service:
       name: name
       state: started
+      enabled: yes
