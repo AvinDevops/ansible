@@ -1,5 +1,5 @@
-name: Ping the server
-hosts: node
-tasks: #list of modules/tasks/collections
-- name: connecting with another server 
-  ansible.builtin.ping:
+- name: Ping the server
+  hosts: node
+  tasks: #list of modules/tasks/collections
+  - name: connecting with another server 
+    ansible.builtin.ping:
