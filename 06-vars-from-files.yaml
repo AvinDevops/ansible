@@ -1,6 +1,6 @@
 - name: variables from files
   hosts: Master
-  vars-files:
+  vars_files:
   - vars.yaml
   tasks:
   - name: print values from file
