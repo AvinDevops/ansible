@@ -1,0 +1,10 @@
+- name: varibales at play level
+  hosts:  Master
+  vars:
+    Course: Devops
+    Trainer: Avinash Kumar
+    Duration: 120hrs
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{course}} from {{Trainer}}, Duration is {{Duration}}"
