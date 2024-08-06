@@ -1,6 +1,6 @@
 - name: Checking number greater or less
   hosts:  localhost
-  var_prompt:
+  vars_prompt:
   - name: NUM
     prompt: please enter number
     private:  no
