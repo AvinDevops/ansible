@@ -7,9 +7,13 @@
   vars_prompt:
   - name: Wishes
     prompt: please send your wish
+    private: no
   tasks:  
   - name: Printing variable preference
     vars:
       Wishes: "Morning from task level vars"
     ansible.builtin.debug:
       msg: "Hi, Avinash Good {{Wishes}}"
+
+# 1.Arguments
+# 2.Task level
