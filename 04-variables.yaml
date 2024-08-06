@@ -1,9 +1,9 @@
 - name: varibales at play level
   hosts:  Master
   vars:
-    Course: Devops
+    Course: "Terraform"
     Trainer: Avinash Kumar
-    Duration: 120hrs
+    Duration: "15 hrs"
   tasks:
   - name: print information
     ansible.builtin.debug:
