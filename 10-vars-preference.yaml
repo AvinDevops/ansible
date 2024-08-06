@@ -4,10 +4,10 @@
     Wishes: "Morning from play level"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: Wishes
-    prompt: please send your wish
-    private: no
+  # vars_prompt:
+  # - name: Wishes
+  #   prompt: please send your wish
+  #   private: no
   tasks:  
   - name: Printing variable preference
     # vars:
@@ -18,3 +18,4 @@
 # 1.Arguments
 # 2.Task level
 # 3.Var file
+# 4.prompt
