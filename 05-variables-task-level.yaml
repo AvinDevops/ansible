@@ -1,0 +1,19 @@
+- name: variables at task level
+  hosts: Master
+  vars:
+    Course: "Aws"
+    Trainer: "AK"
+    Duration: "120 hrs"
+  tasks:
+  - name: print override information
+    vars:
+      Course: "Devops"
+    ansible.builtin.debug:
+      msg:  "Hi, we are learning {{Course}} from {{Trainer}}, and Duration is {{Duration}}"
+
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi, we are learning {{Course}} from {{Trainer}}, and Duration is {{Duration}}"
+
+
+   
