@@ -23,3 +23,12 @@
     ansible.builtin.debug:
       msg: "{{ course | upper }}"
 # ----------------------------------------------------
+
+- name: remove duplicates
+  hosts: localhost
+  vars:
+    number: [1,2,2,2,3,3,3,4,5,5]
+  tasks:
+  - name: print values
+    ansible.builtin.debug:
+      msg:  "{{ number | unique}}"
