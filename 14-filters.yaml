@@ -32,3 +32,13 @@
   - name: print values
     ansible.builtin.debug:
       msg:  "{{ number | unique}}"
+
+
+- name: min and max
+  hosts:  localhost
+  vars:
+    number: [25,45,58,78,99]
+  tasks:
+  - name:   print min and max value
+    ansible.builtin.debug:
+      msg:  "min value is : {{number | min}} max value is : {{max}}"
