@@ -6,4 +6,4 @@
   - name: print loop
     ansible.builtin.debug:
       msg: "{{item}}"
-    loop: my_list
+    loop: {{my_list}}
