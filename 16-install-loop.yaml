@@ -1,5 +1,6 @@
 - name: installing with loop
   hosts: localhost
+  become: yes
   # vars:
   tasks: 
   - name: installing with the help of loops
