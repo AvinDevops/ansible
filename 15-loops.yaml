@@ -4,6 +4,7 @@
   - name: print loop
     ansible.builtin.debug:
       msg: {{item}}
-    loop: nginx
-          mysql-server
-          nodejs
+    loop: 
+    - nginx
+    - mysql-server
+    - nodejs
