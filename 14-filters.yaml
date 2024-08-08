@@ -11,3 +11,10 @@
   - name: print lowercase
     ansible.builtin.debug:
       msg:  "Ansible"
+
+- name: uppercase
+  hosts:  localhost
+  tasks:
+  - name: print uppercase
+    ansible.builtin.debug:
+      msg: "Ansible uppercase"
