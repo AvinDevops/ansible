@@ -1,0 +1,12 @@
+- name: installing with loop
+  hosts: localhost
+  # vars:
+  tasks: 
+  - name: installing with the help of loops
+    ansible.builtin.dnf:
+      name: "{{item}}"
+      state: latest
+    loop:
+    - nginx
+    - postfix
+    - mysql
