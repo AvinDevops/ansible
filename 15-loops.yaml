@@ -1,9 +1,9 @@
 - name: loops
   hosts:  localhost
+  vars:
+    my_list:  [nginx,mysql-server,nodejs]
   tasks:
   - name: print loop
     ansible.builtin.debug:
       msg: "{{item}}"
-    loop: - nginx
-          - mysql-server
-          - nodejs
+    loop: my_list
