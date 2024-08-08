@@ -42,3 +42,15 @@
   - name: print min and max value
     ansible.builtin.debug:
       msg:  "min value is : {{number | min}}, max value is : {{number | max}}"
+
+- name: convert dictionary into items/list
+  hosts:  localhost
+  vars:
+    my_dict:
+      course: "ansible"
+      trainer:  "avinash"
+      duration: 120hr
+  tasks:
+  - name: print converted list values
+    ansible.builtin.debug:
+      msg:  "result is : {{my_dict  | dict2items}}"
